@@ -25,12 +25,14 @@ Located in the `MATLAB/` folder:
 ### 🧠 Python Scripts – *PCA/LDA Classification*
 Located in the `Python/` folder:
 
-- `preprocess_and_classify.py`: Loads cleaned spectral data and applies:
-  - Principal Component Analysis (PCA)
-  - Linear Discriminant Analysis (LDA)
-  - 2D/3D plotting of class separation
-- `baseline_correction.py`: Implements signal cleaning methods such as Asymmetric Least Squares and Standard Normal Variate (SNV)
-- `gui_pca_lda.py` *(optional)*: A PyQt-based GUI to allow users to visually inspect and classify Raman spectra (if included)
+`script3.py`:  
+  Performs baseline correction (Zhang, ALS, SNV) and preprocessing steps such as interpolation, standardisation, and spectral region selection.
+
+- `script4.py`:  
+  Applies PCA (Principal Component Analysis) and LDA (Linear Discriminant Analysis) for visualisation and classification of processed Raman spectra. Includes cross-validation and accuracy scoring.
+
+- `script5.py`:  
+  Additional utility functions and extensions used in the classification or preprocessing pipeline (e.g. plotting, outlier handling, advanced parameter tuning).
 
 > These scripts were collaboratively developed. My contribution involved running and adapting the analysis for my datasets, finetuning preprocessing parameters, and interpreting PCA/LDA outputs.
 
